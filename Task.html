@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+</head>
+<body>
+
+    <div id="registration-form">
+        <h2>Registration</h2>
+        <label for="regName">Name:</label>
+        <input type="text" id="regName" placeholder="Enter Name"><br><br>
+        <label for="regPassword">Password</label>
+        <input type="password" id="regPassword" placeholder="Enter Password"><br><br>
+        <button onclick="register()">Register and Go to Login</button>
+    </div>
+
+    <div id="login-form" style="display: none;">
+        <h2>Login</h2>
+        <label for="loginName">Name:</label>
+        <input type="text" id="loginName" placeholder="Enter Name"><br><br>
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" placeholder="Enter Password"><br><br>
+        <button onclick="login()">Login</button>
+        <p id="message" style="color: red;"></p>
+    </div>
+
+    <div id="home-page" style="display: none;">
+        <h2>Welcome Home!</h2>
+        <p>You have successfully logged in.</p>
+    </div>
+    <script src="./App.js"></script>
+
+</body>
+</html>
